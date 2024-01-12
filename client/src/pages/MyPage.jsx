@@ -24,6 +24,7 @@ export default function MyPage() {
           </div>
           <a className="inline-block sm:hidden">
             <FaHamburger />
+            {/**/}
           </a>
         </div>
       </div>
