@@ -11,23 +11,24 @@ import Footer from "../components/footer";
 
 export default function MyPage() {
   return (
-    <div className="font-mono ">
+    <div className="font-mono relative ">
       <div>
         <Home />
       </div>
-
-      <Skills />
-
       <div>
+        <Skills />
+      </div>
+
+      <div id="experience">
         <Experience />
       </div>
-      <div>
+      <div id="portfolio">
         <Portfolio />
       </div>
-      <div>
+      <div id="contact">
         <Contact />
       </div>
-      <div>
+      <div id="footer">
         <Footer />
       </div>
     </div>

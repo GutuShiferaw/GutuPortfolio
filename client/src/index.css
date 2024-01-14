@@ -10,6 +10,28 @@
   background-position: center;
 }
 
+
+#experience {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+  url('./assets/images/background4.png');
+ background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#portfolio {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+  url('./assets/images/background5.png');
+ background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#contact {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+  url('./assets/images/background2.png');
+ background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .typing-text {
     white-space: nowrap;
     overflow: hidden;
@@ -25,7 +47,7 @@
   .typingtext2 {
     white-space: nowrap; 
     overflow: hidden; 
-    animation: typing 2s steps(40, end) infinite; 
+    animation: typing 4s steps(40, end) infinite; 
   }
   @keyframes fadeInUp {
     to {

@@ -57,7 +57,7 @@ export default function home() {
 
       <div
         id="intro-par"
-        className="typing-text mt-28 sm:mt-32 w-4/5 sm:w-2/6 mx-auto mb-20"
+        className="typing-text mt-28 sm:mt-32 w-5/6 sm:w-2/6 md:w-2/4  mx-auto mb-20"
       >
         <div className="line">
           <div className="text-white text-5xl sm:text-7xl mb-3 font-extrabold">

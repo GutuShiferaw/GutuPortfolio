@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function portfolio() {
-  return <div className="h-screen w-screen">portfolio</div>;
+  return <div id="portfolio" className="h-screen w-screen"></div>;
 }
