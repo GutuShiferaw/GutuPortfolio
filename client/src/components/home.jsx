@@ -13,9 +13,7 @@ export default function home() {
       >
         <div className="flex items-center justify-between w-2/3 h-auto mx-auto ">
           <Link to="home" smooth={true} duration={500}>
-            <div className=" text-4xl text-mylime font-extrabold cursor-pointer">
-              G
-            </div>
+            <img className=" w-14" src={Logo} alt="My Logo" />
           </Link>
           <div className="hidden sm:inline-block">
             <ul className="flex items-center list-none gap-6 lg:gap-8 mt-5 text-base font-extrabold">
@@ -32,8 +30,8 @@ export default function home() {
               </Link>
               <Link to="experience" smooth={true} duration={500}>
                 <li className=" cursor-pointer hover:text-white text-mylime ">
-                  <span className=" hidden lg:inline-block">Professional-</span>
-                  Experience
+                  Career
+                  <span className="hidden lg:inline-block">-Journey</span>
                 </li>
               </Link>
               <Link to="portfolio" smooth={true} duration={500}>

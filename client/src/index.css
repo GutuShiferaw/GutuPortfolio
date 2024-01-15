@@ -32,6 +32,14 @@
   background-position: center;
   background-size: cover;
 }
+
+#footer {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+  url('./assets/images/background7.png');
+ background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .typing-text {
     white-space: nowrap;
     overflow: hidden;
