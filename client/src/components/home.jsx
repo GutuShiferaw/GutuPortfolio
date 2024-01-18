@@ -14,7 +14,7 @@ export default function home() {
       >
         <div className="flex items-center justify-between w-2/3 h-auto mx-auto ">
           <Link to="home" smooth={true} duration={500}>
-            <img className=" w-14" src={Logo} alt="My Logo" />
+            <img className="w-14" src={Logo} alt="My Logo" />
           </Link>
           <div className="hidden sm:inline-block">
             <ul className="flex items-center list-none gap-6 lg:gap-8 mt-5 text-base font-extrabold">
