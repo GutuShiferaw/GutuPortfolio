@@ -5,7 +5,8 @@ export default function Skills() {
     <div id="skills" className="flex   h-screen bg-DimGrey">
       <div className=" text-center h-3/4 my-auto w-full sm:w-3/4 mx-auto ">
         <h1 className=" text-xl sm:text-4xl text-white mb-3">
-          01 Technical Skills
+          <span className=" text-slate-400">01</span>{" "}
+          <span className=" font-semibold">Technical Skills</span>
         </h1>
         <p className=" text-sm sm:text-lg text-white mb-10">
           My Knowledge Level in software

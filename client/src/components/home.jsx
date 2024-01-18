@@ -2,6 +2,7 @@ import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import Logo from "../assets/images/Logo.png";
 import { FaHamburger } from "react-icons/fa";
+import resume from "../assets/files/UpdatedResume.pdf";
 import Home from "../components/home";
 import Myimage from "../assets/images/background1.png";
 export default function home() {
@@ -77,14 +78,14 @@ export default function home() {
         className=" line sm:flex text-white w-24 sm:w-60 gap-3 mx-auto "
       >
         <div className=" p-2 bg-orange-700 rounded-2xl  mb-3 sm:m-0 text-xs sm:text-base hover:opacity-80">
-          <a href="#" target="_blank">
+          <a href={resume} download="UpdatedResume.pdf" target="_blank">
             Download CV
           </a>
         </div>
-        <div className=" p-2 bg-mylime rounded-2xl text-xs sm:text-base hover:opacity-80">
-          <a href="#" target="_blank">
+        <div className=" p-2 bg-mylime rounded-2xl text-xs sm:text-base hover:opacity-80 cursor-pointer">
+          <Link to="contact" smooth={true} duration={500}>
             Contact Me
-          </a>
+          </Link>
         </div>
       </div>
     </div>
