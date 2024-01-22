@@ -4,7 +4,7 @@ import { FaRegCopyright } from "react-icons/fa";
 import { Link, animateScroll as scroll } from "react-scroll";
 export default function footer() {
   return (
-    <div id="footer" className=" flex h-full bg-mygrey">
+    <div id="footer" className=" flex h-full w-screen ">
       <div className=" w-full h-full ">
         <div className=" flex justify-between w-2/3 sm:w-2/5 mx-auto p-4 sm:p-8 items-center">
           <img className=" w-14" src={Logo} alt="My Logo" />

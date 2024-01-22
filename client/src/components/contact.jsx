@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 export default function contact() {
   return (
-    <div id="contact" className="flex h-screen  ">
+    <div id="contact" className="flex h-screen w-screen  ">
       <div
         id="form-cont"
         className=" h-4/5 sm:h-3/4 w-11/12 sm:w-3/5 m-auto bg-DimGrey rounded-lg "

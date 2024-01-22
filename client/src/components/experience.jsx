@@ -2,7 +2,7 @@ import React from "react";
 
 export default function experience() {
   return (
-    <div id="experience" className="flex h-screen">
+    <div id="experience" className="flex h-screen w-screen ">
       <div className="w-full h-full">
         <div id="header-cont" className="w-full">
           <h1 className="text-center mt-6 text-xl sm:text-4xl text-white mb-5 sm:mb-10">

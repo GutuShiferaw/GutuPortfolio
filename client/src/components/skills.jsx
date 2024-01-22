@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Skills() {
   return (
-    <div id="skills" className="flex   h-screen bg-DimGrey">
+    <div id="skills" className="flex   h-screen w-screen  bg-DimGrey">
       <div className=" text-center h-3/4 my-auto w-full sm:w-3/4 mx-auto ">
         <h1 className=" text-xl sm:text-4xl text-white mb-3">
           <span className=" text-slate-400">01</span>{" "}
