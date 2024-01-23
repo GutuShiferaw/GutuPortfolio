@@ -38,17 +38,26 @@ export default function contact() {
           </div>
           <div id="right-side" className=" sm:justify-end ">
             <div id="form-cont" className=" w-11/12 sm:w-auto mx-auto sm:mx-0">
-              <form action="#" className="w-full">
+              <form
+                action="mailto:Gutuwestbrook@gmail.com"
+                method="post"
+                enctype="text/plain"
+                className="w-full"
+              >
                 <div className=" sm:flex gap-2 w-full mx-auto">
                   <input
                     className=" w-full sm:w-auto  p-1 sm:p-2 mb-2 sm:mb-0"
                     placeholder=" Full-Name"
                     type="text"
+                    name="Full Name: "
+                    required="true"
                   ></input>
                   <input
                     className=" w-full sm:w-auto p-1 sm:p-2"
                     placeholder=" Email"
                     type="text"
+                    name="Email: "
+                    required="true"
                   ></input>
                 </div>
                 <div className=" mt-2">
@@ -56,15 +65,18 @@ export default function contact() {
                     className=" w-full p-1 sm:p-2"
                     placeholder=" Phone"
                     type="phone"
+                    name="Phone Number: "
+                    required="true"
                   ></input>
                 </div>
                 <div className=" mt-2">
                   <textarea
                     className=" w-full p-1 sm:p-2"
-                    name="text-box"
+                    name="Message: "
                     cols="20"
                     rows="5"
                     placeholder=" Your Message here"
+                    required="true"
                   ></textarea>
                 </div>
                 <div className=" mt-2">

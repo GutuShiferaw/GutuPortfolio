@@ -41,47 +41,20 @@ export default function Portfolio() {
         </div>
         <div
           id="slider-cont"
-          className="w-full mt-12 md:mt-24 lg:mt-20"
+          className="w-full h-full mt-12 md:mt-24 lg:mt-20"
           style={sliderStyles}
         >
           <Slider {...settings}>
             {/* Your portfolio items go here */}
-            <div className=" text-center">
-              <img
-                src={gui}
-                alt="Micro Grid GUI"
-                className="border-white border-2 w-3/4 sm:w-1/5 mx-auto object-cover rounded-lg"
-              />
-              <p className=" mt-2 text-mylime">
-                Micro Grid GUI (Renewable resource Project)
-              </p>
-              <p className="  text-white w-4/5 sm:w-1/2 mx-auto  text-sm sm:text-base ">
-                A graphical user interface (GUI) for a Microgrid simulation,
-                developed within the Django framework, serves as a platform for
-                presenting MATLAB Simulink Microgrid simulations through the
-                utilization of APIs. This entails creating a user interface with
-                Django and integrating it with MATLAB and Simulink to enable the
-                seamless presentation of Microgrid simulations. The GUI
-                facilitates user interaction and visualization of simulation
-                results, providing a cohesive environment for managing and
-                exploring Microgrid scenarios..{" "}
-              </p>
-              <a
-                href="https://github.com/GutuShiferaw/Software-Projects/tree/36ddf891af940f1afb1f38ec6a656647c70c5bc5/power%20control%20gui/Power%20Gui/powergui"
-                target="_blank"
-                className=" text-slate-400 underline italic mb-10 cursor-pointer"
-              >
-                View more detail:
-              </a>
-            </div>
+
             <div className=" text-center">
               <img
                 src="https://media.giphy.com/media/26vUFrAE8wlkiH5CM/giphy.gif"
                 alt="Thermostat App"
-                className="border-white border-2 w-3/4 sm:w-1/5  mx-auto object-cover rounded-lg"
+                className="border-white border-2 w-1/2 sm:w-1/6  mx-auto object-cover rounded-lg"
               />
               <p className=" mt-2 text-mylime">Thermostat Appilcation</p>
-              <p className="  text-white w-4/5 sm:w-1/2 mx-auto  text-sm sm:text-base ">
+              <p className="  text-white  w-4/5 sm:w-2/4 mx-auto  text-xs sm:text-base ">
                 This project involves using a Raspberry Pi to control an LED
                 through a locally hosted Django server. The Raspberry Pi,
                 functioning as both the server host and controller, communicates
@@ -100,12 +73,37 @@ export default function Portfolio() {
             </div>
             <div className=" text-center">
               <img
+                src={gui}
+                alt="Micro Grid GUI"
+                className="border-white border-2 w-1/2 sm:w-1/6 mx-auto object-cover rounded-lg"
+              />
+              <p className=" mt-2 text-mylime">
+                Micro Grid GUI (Renewable resource Project)
+              </p>
+              <p className="  text-white  w-4/5 sm:w-2/4 mx-auto  text-xs sm:text-base ">
+                A graphical user interface (GUI) for a Microgrid simulation,
+                developed within the Django framework, serves as a platform for
+                presenting MATLAB Simulink Microgrid simulations through the
+                utilization of APIs. This entails creating a user interface with
+                Django and integrating it with MATLAB and Simulink to enable the
+                seamless presentation of Microgrid simulations.
+              </p>
+              <a
+                href="https://github.com/GutuShiferaw/Software-Projects/tree/36ddf891af940f1afb1f38ec6a656647c70c5bc5/power%20control%20gui/Power%20Gui/powergui"
+                target="_blank"
+                className=" text-slate-400 underline italic mb-10 cursor-pointer"
+              >
+                View more detail:
+              </a>
+            </div>
+            <div className=" text-center">
+              <img
                 src={Steg}
                 alt="Stegenography Tool"
-                className="border-white border-2 w-3/4 sm:w-1/5  mx-auto object-cover rounded-lg"
+                className="border-white border-2 w-1/2 sm:w-1/6  mx-auto object-cover rounded-lg"
               />
               <p className=" mt-2 text-mylime">Stegenography Tool</p>
-              <p className="  text-white w-4/5 sm:w-1/2 mx-auto  text-sm sm:text-base ">
+              <p className="  text-white  w-4/5 sm:w-2/4 mx-auto  text-xs sm:text-base ">
                 PiHide is a tool that enables users to swiftly encode and decode
                 concealed messages within images, employing a range of optional
                 encryption algorithms for added security and versatility
@@ -122,12 +120,12 @@ export default function Portfolio() {
               <img
                 src={pred}
                 alt="Stegenography Tool"
-                className="border-white border-2 w-3/4 sm:w-1/5  mx-auto object-cover rounded-lg"
+                className="border-white border-2 w-1/2 sm:w-1/6  mx-auto object-cover rounded-lg"
               />
               <p className=" mt-2 text-mylime">
                 Soccer Match Predictor AI Tool
               </p>
-              <p className="  text-white w-4/5 sm:w-1/2 mx-auto  text-sm sm:text-base ">
+              <p className="  text-white  w-4/5 sm:w-2/4 mx-auto  text-xs sm:text-base">
                 This AI tool is constructed using Python's tkinter module and
                 incorporates a trained AI model, specifically Gradient Boosting.
                 The model leverages historical English Premier League soccer
@@ -148,10 +146,10 @@ export default function Portfolio() {
               <img
                 src="https://media.giphy.com/media/0pBmCPzL0Tn7MCyZZb/giphy.gif"
                 alt="Recipe Organizer App"
-                className="border-white border-2 w-3/4 sm:w-1/5  mx-auto object-cover rounded-lg"
+                className="border-white border-2 w-1/2 sm:w-1/6  mx-auto object-cover rounded-lg"
               />
               <p className=" mt-2 text-mylime">Recipe Organizer App</p>
-              <p className="  text-white w-4/5 sm:w-1/2 mx-auto  text-sm sm:text-base ">
+              <p className="  text-white  w-4/5 sm:w-2/4 mx-auto  text-xs sm:text-base ">
                 A simple Recipe Organizer CRUD Application developed in EJS,
                 this tool assists users in efficiently managing their cooking
                 recipes. The application supports basic CRUD (Create, Read,

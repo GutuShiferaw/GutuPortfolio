@@ -1,13 +1,86 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import Logo from "../assets/images/Logo.png";
-import { FaHamburger } from "react-icons/fa";
+import { FaHamburger, FaTimes, FaBars } from "react-icons/fa";
 import resume from "../assets/files/UpdatedResume.pdf";
 import Home from "../components/home";
 import Myimage from "../assets/images/background1.png";
 export default function home() {
+  const [isVisible, setVisibility] = useState(false);
+  const toggleSidebar = () => {
+    setVisibility(!isVisible);
+  };
+  const handleLinkClick = () => {
+    setVisibility(false);
+  };
   return (
     <div id="home" className=" h-screen w-screen">
+      {isVisible && (
+        <div
+          id="sidebar-cont"
+          className=" flex h-screen w-screen m-0 p-0 bg-black"
+        >
+          <div className=" fixed top-5 right-2">
+            <button className=" w-10 text-white" onClick={handleLinkClick}>
+              <FaTimes />
+            </button>
+          </div>
+          <ul className=" list-none w-1/4 mx-auto  mt-10 ">
+            <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              onClick={handleLinkClick}
+            >
+              <li className=" cursor-pointer hover:text-white text-mylime underline ">
+                Home
+              </li>
+            </Link>
+            <Link
+              to="skills"
+              smooth={true}
+              duration={500}
+              onClick={handleLinkClick}
+            >
+              <li className=" cursor-pointer hover:text-white text-mylime underline ">
+                <span className=" hidden lg:inline-block">Technical-</span>
+                Skills
+              </li>
+            </Link>
+            <Link
+              to="experience"
+              smooth={true}
+              duration={500}
+              onClick={handleLinkClick}
+            >
+              <li className=" cursor-pointer hover:text-white text-mylime underline ">
+                Career
+                <span className="hidden lg:inline-block">-Journey</span>
+              </li>
+            </Link>
+            <Link
+              to="portfolio"
+              smooth={true}
+              duration={500}
+              onClick={handleLinkClick}
+            >
+              <li className=" cursor-pointer hover:text-white text-mylime underline ">
+                Portfolio
+              </li>
+            </Link>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              onClick={handleLinkClick}
+            >
+              <li className="cursor-pointer hover:text-white text-mylime underline ">
+                Contact
+              </li>
+            </Link>
+          </ul>
+        </div>
+      )}
       <div
         id="nav-bar"
         className=" top-0 w-screen shadow-xl bg-transparent py-2 z-20"
@@ -47,9 +120,9 @@ export default function home() {
               </Link>
             </ul>
           </div>
-          <a className="inline-block sm:hidden">
-            <FaHamburger />
-          </a>
+          <button onClick={toggleSidebar} className="inline-block sm:hidden">
+            <FaBars className=" text-white" />
+          </button>
         </div>
       </div>
       {/* nav bar ends */}
