@@ -13,11 +13,11 @@ export default function experience() {
         <div id="grid-cont" className="flex w-full h-4/5">
           <div
             id="left-half"
-            className="w-1/2 justify-start border-r-2 mx-3 border-mylime h-full"
+            className="w-1/2 justify-start border-r-2 mx-3 border-mylime h-full "
           >
             {/* Content for the left half */}
             <div className=" h-1/4 "></div>
-            <div className=" h-1/4 text-right mr-2">
+            <div className=" h-1/4 text-right mr-2 experience-item">
               <p className=" text-sm sm:text-lg text-white">
                 INSA <span className=" text-slate-400">(2021-2022)</span>
                 <span className=" text-mylime">.</span>
@@ -40,7 +40,7 @@ export default function experience() {
               </div>
             </div>
             <div className=" h-1/4 "></div>
-            <div className=" h-1/4 text-right mr-2 ">
+            <div className=" h-1/4 text-right mr-2 experience-item">
               <p className=" text-sm sm:text-lg text-white">
                 Walmart Canada{" "}
                 <span className=" text-slate-400">(2019-2021)</span>
@@ -58,9 +58,12 @@ export default function experience() {
               </div>
             </div>
           </div>
-          <div id="right-half" className="w-1/2 h-full justify-end">
+          <div
+            id="right-half"
+            className="w-1/2 h-full justify-end experience-item"
+          >
             {/* Content for the right half */}
-            <div className=" h-1/4 ">
+            <div className=" h-1/4 experience-item">
               <p className=" text-sm sm:text-lg text-white">
                 <span className=" text-mylime">.</span>People to People Aid
                 Organization{" "}
@@ -83,7 +86,7 @@ export default function experience() {
               </div>
             </div>
             <div className=" h-1/4 "></div>
-            <div className=" h-1/4 ">
+            <div className=" h-1/4 experience-item">
               <p className=" text-sm sm:text-lg text-white">
                 <span className=" text-mylime">.</span>Go-Bolt Logisitcs
                 <span className=" text-slate-400">(2019-2023)</span>

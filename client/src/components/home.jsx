@@ -121,7 +121,7 @@ export default function home() {
             </ul>
           </div>
           <button onClick={toggleSidebar} className="inline-block sm:hidden">
-            <FaBars className=" text-white" />
+            <FaBars className=" text-white text-xl" />
           </button>
         </div>
       </div>

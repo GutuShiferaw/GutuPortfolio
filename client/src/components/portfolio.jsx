@@ -45,8 +45,6 @@ export default function Portfolio() {
           style={sliderStyles}
         >
           <Slider {...settings}>
-            {/* Your portfolio items go here */}
-
             <div className=" text-center">
               <img
                 src="https://media.giphy.com/media/26vUFrAE8wlkiH5CM/giphy.gif"
